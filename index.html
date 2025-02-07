@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agenda de Datas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+  <header class="container header">
+    <p id="date-display">Hoje - 07/02/2025</p>
+    <nav>
+      <a href="/" aria-label="Adicionar uma nova data">+</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container date-area">
+      <h1>Agenda de Datas</h1>
+      <div>
+        <h2>Minhas Datas</h2>
+      </div>
+      <div>
+        <ul class="date-list">
+          <li class="date-item">
+            <div class="date-item-info">
+              <h3>Natal</h3>
+              <div>
+                <p>25/12/2025</p>
+                <p>Faltam <span id="missing-days-counter">X</span> dias</p>
+              </div>
+              <div class="date-functions">
+                <a href="/" id="edit-date" aria-label="Editar esta data">Editar Data</a>
+                <button id="delete-date">Excluir Data</button>
+              </div>
+            </div>
+          </li>
+          <li class="date-item">
+            <div class="date-item-info">
+              <h3>Ano Novo</h3>
+              <div>
+                <p>01/01/2025</p>
+                <p>Faltam <span id="missing-days-counter">X</span> dias</p>
+              </div>
+              <div class="date-functions">
+                <a href="/" id="edit-date" aria-label="Editar esta data">Editar Data</a>
+                <button id="delete-date" aria-label="Excluir esta data">Excluir Data</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
