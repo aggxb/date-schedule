@@ -1,0 +1,87 @@
+.date-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: calc(100vh - (4rem + 1rem));
+}
+
+.date-area h1 {
+  font-size: 4rem;
+  max-width: 7ch;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.date-area h2 {
+  font-size: 2rem;
+  padding: .5rem 1rem;
+}
+
+.date-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.date-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem .5rem;
+  border: 1px solid;
+  border-radius: 12px;
+  width: 350px;
+  box-sizing: border-box;
+}
+
+.date-item-info #missing-days-counter {
+  font-weight: 700;
+}
+
+.date-item-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.date-functions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.date-functions #edit-date {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 50%;
+  color: black;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+}
+
+.date-functions #delete-date {
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  height: 50px;
+  width: 50px;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 50%;
+  background: none;
+  color: black;
+}
