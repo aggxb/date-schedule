@@ -8,9 +8,12 @@
   transform: translate(-50%, -50%);
   width: 55vw;
   padding: 3rem 1.25rem;
-  border: 1px solid;
   border-radius: 10px;
-  background: antiquewhite;
+  background: var(--color3);
+}
+
+.date-modal h2 {
+  color: var(--color1);
 }
 
 .date-form {
@@ -29,13 +32,17 @@
 .date-form-input label {
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--color1);
 }
 
 .date-form-input input {
   font-size: 1.2rem;
   font-weight: 500;
+  border: 1px solid transparent;
   border-radius: 4rem;
   padding: .5rem;
+  background: var(--color4);
+  color: var(--color1);
 }
 
 .date-form button {
@@ -44,6 +51,8 @@
   max-width: fit-content;
   margin-top: 2rem;
   padding: .5rem 2rem;
+  border: 1px solid transparent;
   border-radius: 2rem;
-  background: none;
+  background: var(--color1);
+  color: var(--color3);
 }
