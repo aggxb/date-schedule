@@ -12,7 +12,8 @@
 #date-display {
   font-size: 1.25rem;
   padding: .5rem 1rem;
-  border: 1px solid;
+  background: var(--color2);
+  color: var(--color3);
   border-radius: 4rem;
   text-align: center;
 }
@@ -20,7 +21,7 @@
 .header nav a {
   font-size: 2rem;
   padding: .5rem 2.25rem;
-  border: 1px solid;
   border-radius: 50%;
-  color: black;
+  background: var(--color2);
+  color: var(--color3);
 }

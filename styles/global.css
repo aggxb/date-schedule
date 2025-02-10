@@ -1,5 +1,16 @@
+:root {
+  --color1: #10002B;
+  --color2: #9D4EDD;
+  --color3: #E0AAFF;
+  --color4: #EDF2FB;
+}
+
 * {
   font-family: 'Liter';
+}
+
+body {
+  background: var(--color1);
 }
 
 .container {
