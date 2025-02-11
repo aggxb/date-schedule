@@ -1,18 +1,38 @@
-.date-modal {
-  position: absolute;
+#add-date-modal {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.add-date {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 55vw;
   padding: 3rem 1.25rem;
   border-radius: 10px;
   background: var(--color3);
+  border: none;
 }
 
-.date-modal h2 {
+.add-date-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-date-header h2 {
+  color: var(--color1);
+}
+
+.add-date-header button {
+  position: absolute;
+  background: none;
+  border: none;
+  right: 20px;
+  top: 20px;
+  padding: .25rem;
+  font-size: 1.25rem;
   color: var(--color1);
 }
 

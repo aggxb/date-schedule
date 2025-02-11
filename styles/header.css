@@ -18,10 +18,11 @@
   text-align: center;
 }
 
-.header nav a {
+.header nav > .open-modal {
   font-size: 2rem;
   padding: .5rem 2.25rem;
   border-radius: 50%;
   background: var(--color2);
   color: var(--color3);
+  border: 1px solid transparent;
 }
