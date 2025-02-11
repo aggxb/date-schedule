@@ -18,7 +18,7 @@
   <header class="container header">
     <p id="date-display">Hoje - 07/02/2025</p>
     <nav>
-      <a href="/" aria-label="Adicionar uma nova data">+</a>
+      <button class="open-modal" date-modal="add-date-modal" aria-label="Adicionar uma nova data">+</button>
     </nav>
   </header>
 
@@ -60,20 +60,25 @@
       </div>
     </section>
 
-    <div class="date-modal">
-      <h2>Escolha sua data:</h2>
-      <form class="date-form">
-        <div class="date-form-input">
-          <label for="name">Nome</label>
-          <input type="text" id="name">
+    <dialog id="add-date-modal">
+      <div class="add-date">
+        <div class="add-date-header">
+          <h2>Escolha sua data:</h2>
+          <button class="close-modal" data-modal="add-date-modal"><i class="fa-solid fa-x"></i></button>
         </div>
-        <div class="date-form-input">
-          <label for="date">Data</label>
-          <input type="date" id="date">
-        </div>
-        <button>Adicionar Data</button>
-      </form>
-    </div>
+        <form class="date-form">
+          <div class="date-form-input">
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+          </div>
+          <div class="date-form-input">
+            <label for="date">Data</label>
+            <input type="date" id="date">
+          </div>
+          <button>Adicionar Data</button>
+        </form>
+      </div>
+    </dialog>
   </main>
 </body>
 
