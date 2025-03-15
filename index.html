@@ -17,7 +17,7 @@
 
 <body>
   <header class="container header">
-    <p id="date-display">Hoje - 07/02/2025</p>
+    <p id="date-display">Hoje - <span></span></p>
     <nav>
       <button class="open-modal" date-modal="add-date-modal" aria-label="Adicionar uma nova data">+</button>
     </nav>
@@ -30,34 +30,7 @@
         <h2>Minhas Datas</h2>
       </div>
       <div>
-        <ul class="date-list">
-          <li class="date-item">
-            <div class="date-item-info">
-              <h3>Natal</h3>
-              <div>
-                <p>25/12/2025</p>
-                <p>Faltam <span id="missing-days-counter">X</span> dias</p>
-              </div>
-            </div>
-            <div class="date-functions">
-              <a href="/" id="edit-date" aria-label="Editar esta data"><i class="fa-solid fa-pencil"></i></a>
-              <button id="delete-date" aria-label="Excluir esta data"><i class="fa-solid fa-trash"></i></button>
-            </div>
-          </li>
-          <li class="date-item">
-            <div class="date-item-info">
-              <h3>Ano Novo</h3>
-              <div>
-                <p>01/01/2025</p>
-                <p>Faltam <span id="missing-days-counter">X</span> dias</p>
-              </div>
-            </div>
-            <div class="date-functions">
-              <a href="/" id="edit-date" aria-label="Editar esta data"><i class="fa-solid fa-pencil"></i></a>
-              <button id="delete-date" aria-label="Excluir esta data"><i class="fa-solid fa-trash"></i></button>
-            </div>
-          </li>
-        </ul>
+        <ul class="date-list"></ul>
       </div>
     </section>
 
@@ -76,6 +49,7 @@
             <label for="date">Data</label>
             <input type="date" id="date">
           </div>
+          <span id="error-msg">Insira as informações necessárias</span>
           <button>Adicionar Data</button>
         </form>
       </div>
