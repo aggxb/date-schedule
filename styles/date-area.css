@@ -49,9 +49,9 @@
   box-sizing: border-box;
 }
 
-.date-item-info #missing-days-counter {
+.date-item-info .remaining-days-counter {
   color: var(--color3);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .date-item-info > div {
@@ -67,13 +67,13 @@
   gap: .5rem;
 }
 
-.date-functions #edit-date,
-.date-functions #delete-date {
+.date-functions .edit-date,
+.date-functions .delete-date {
   background: var(--color3);
   color: var(--color1);
 }
 
-.date-functions #edit-date {
+.date-functions .edit-date {
   font-size: 1rem;
   padding: 1rem;
   border: 1px solid transparent;
@@ -83,7 +83,7 @@
   width: 50px;
 }
 
-.date-functions #delete-date {
+.date-functions .delete-date {
   display: flex;
   align-self: center;
   font-size: 1rem;
